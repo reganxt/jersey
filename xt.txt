@@ -2101,6 +2101,16 @@ solutions[
                     }
                 }
             ],
+            "must": [
+                {
+                    "wildcard": {
+                        "TraceID": {
+                            "wildcard": "*99*",
+                            "boost": 1
+                        }
+                    }
+                }
+            ],
             "should": [
                 {
                     "term": {
@@ -2118,7 +2128,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800a7bd1eb78763b74f",
@@ -2126,7 +2136,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a42c88b365a43cb",
@@ -2134,7 +2144,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8007534674d2f36d3db",
@@ -2142,7 +2152,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a2479ba32383521",
@@ -2150,7 +2160,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a686ef911aa7003",
@@ -2158,7 +2168,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800a726ca6fc72a8004",
@@ -2166,7 +2176,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800a75eba4a13d6802a",
@@ -2174,7 +2184,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a11ac798f093508",
@@ -2182,7 +2192,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006ac7e4ad247a8457",
@@ -2190,7 +2200,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8007520d7ea9a00b007",
@@ -2198,7 +2208,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a73442c60a4901b",
@@ -2206,7 +2216,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800a72031d979dee011",
@@ -2214,7 +2224,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800a77ed924b34c7019",
@@ -2222,7 +2232,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006ada6cd5380d200f",
@@ -2230,7 +2240,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a80075d5002cacc51018",
@@ -2238,7 +2248,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA10",
@@ -2246,7 +2256,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8007577482785a3b003",
@@ -2254,7 +2264,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "NE=71c",
@@ -2262,7 +2272,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "NE=708",
@@ -2270,7 +2280,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a7e74d3df5dd008",
@@ -2278,7 +2288,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800a76565812b8c8871",
@@ -2286,7 +2296,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a5dc5e484ad701f",
@@ -2294,7 +2304,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800a7fa0ab0966aa7cb",
@@ -2302,7 +2312,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800757d681a83baf00b",
@@ -2310,7 +2320,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a14ff87665a050f",
@@ -2318,7 +2328,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a800a7e6979a2d4a6873",
@@ -2326,7 +2336,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA3",
@@ -2334,7 +2344,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA4",
@@ -2342,7 +2352,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA5",
@@ -2350,7 +2360,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA6",
@@ -2358,7 +2368,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA7",
@@ -2366,7 +2376,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA9",
@@ -2374,7 +2384,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA8",
@@ -2382,7 +2392,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA1",
@@ -2390,7 +2400,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "chartSolutionA2",
@@ -2398,7 +2408,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a8b71d77a400511",
@@ -2406,7 +2416,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8006a5267a919084023",
@@ -2414,7 +2424,7 @@ solutions[
                         }
                     }
                 },
-				{
+                {
                     "term": {
                         "SolutionId": {
                             "value": "c0a8007538d5e265f99028",
