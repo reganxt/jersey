@@ -1,6 +1,6 @@
 su - ossadm -c "/opt/oss/manager/agent/bin/ipmc_adm -cmd restartapp -app DVCallchainService"
 
-CallChainQueryServiceDelegateImpl  queryOverviewTraceByFilter
+trace com.huawei.cmp.dvcallchainservice.impl.CallChainQueryServiceDelegateImpl queryOverviewTraceByFilter
 
 solutions[
   "c0a8007576eb6d6c2e6024",
