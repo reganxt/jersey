@@ -705,3 +705,669 @@ solutions[
         }
     }
 }
+
+
+分页查询
+{
+    "from": 0,
+    "size": 10,
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "match": {
+                        "SeqNo": {
+                            "query": "1",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "range": {
+                        "Time": {
+                            "from": "2024-09-22T10:00:00.000Z",
+                            "to": "2024-09-22T23:59:59.000Z",
+                            "include_lower": true,
+                            "include_upper": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "Flag": {
+                            "query": "serverSend",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                }
+            ],
+            "should": [
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8007576eb6d6c2e6024",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a512b1264cb650d",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800a7bd1eb78763b74f",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a42c88b365a43cb",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8007534674d2f36d3db",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a2479ba32383521",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a686ef911aa7003",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800a726ca6fc72a8004",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800a75eba4a13d6802a",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a11ac798f093508",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006ac7e4ad247a8457",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8007520d7ea9a00b007",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a73442c60a4901b",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800a72031d979dee011",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800a77ed924b34c7019",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006ada6cd5380d200f",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a80075d5002cacc51018",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA10",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8007577482785a3b003",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "NE=71c",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "NE=708",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a7e74d3df5dd008",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800a76565812b8c8871",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a5dc5e484ad701f",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800a7fa0ab0966aa7cb",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800757d681a83baf00b",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a14ff87665a050f",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a800a7e6979a2d4a6873",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA3",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA4",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA5",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA6",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA7",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA9",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA8",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA1",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "chartSolutionA2",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a8b71d77a400511",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8006a5267a919084023",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                },
+                {
+                    "match": {
+                        "SolutionId": {
+                            "query": "c0a8007538d5e265f99028",
+                            "operator": "OR",
+                            "prefix_length": 0,
+                            "max_expansions": 50,
+                            "fuzzy_transpositions": true,
+                            "lenient": false,
+                            "zero_terms_query": "NONE",
+                            "auto_generate_synonyms_phrase_query": true,
+                            "boost": 1
+                        }
+                    }
+                }
+            ],
+            "adjust_pure_negative": true,
+            "minimum_should_match": "1",
+            "boost": 1
+        }
+    },
+    "sort": [
+        {
+            "Time": {
+                "order": "desc"
+            }
+        }
+    ]
+}
