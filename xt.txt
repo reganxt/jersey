@@ -2117,7 +2117,7 @@ solutions[
                             "boost": 1
                         }
                     }
-                }
+                },
 				{
                     "term": {
                         "SolutionId": {
@@ -2421,7 +2421,7 @@ solutions[
                             "boost": 1
                         }
                     }
-                },
+                }
             ],
             "adjust_pure_negative": true,
             "minimum_should_match": "1",
