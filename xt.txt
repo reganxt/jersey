@@ -741,6 +741,14 @@ solutions[
                     }
                 },
                 {
+                    "wildcard": {
+                        "TraceID": {
+                            "wildcard": "*9999*",
+                            "boost": 1
+                        }
+                    }
+                },
+                {
                     "match": {
                         "Flag": {
                             "query": "serverSend",
