@@ -1,5 +1,7 @@
 su - ossadm -c "/opt/oss/manager/agent/bin/ipmc_adm -cmd restartapp -app DVCallchainService"
 
+CallChainQueryServiceDelegateImpl  queryOverviewTraceByFilter
+
 solutions[
   "c0a8007576eb6d6c2e6024",
   "c0a8006a512b1264cb650d",
