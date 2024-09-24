@@ -1,3 +1,10 @@
+
+ 
+
+21号  3b07ab960e4b491e   dataID=260831923,BulkTypeName=OrderTodoRetryBulk,taskJobDefID=588328857258441743,bulkGroup=SYSTEM
+
+23号  346c39dd2e99b04a   CommandID=SendMnyPayBillNameSearch,LinkID=1156200ZPCGBK1RPNDNHO0P0TJ1UU2G
+
 su - ossadm -c "/opt/oss/manager/agent/bin/ipmc_adm -cmd restartapp -app DVCallchainService"
 
 trace com.huawei.cmp.dvcallchainservice.impl.CallChainQueryServiceDelegateImpl queryOverviewTraceByFilter
